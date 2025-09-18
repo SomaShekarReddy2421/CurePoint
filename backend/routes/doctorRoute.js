@@ -19,7 +19,7 @@ doctorRouter.get("/list", doctorList);
 
 doctorRouter.post("/cancel-appointment", authDoctor, appointmentCancel);
 doctorRouter.get("/appointments", authDoctor, appointmentsDoctor);
-doctorRouter.post("/change-availability", authDoctor, changeAvailablity);
+doctorRouter.patch("/change-availability", authDoctor, changeAvailablity);
 doctorRouter.post("/complete-appointment", authDoctor, appointmentComplete);
 doctorRouter.get("/dashboard", authDoctor, doctorDashboard);
 doctorRouter.get("/profile", authDoctor, doctorProfile);
